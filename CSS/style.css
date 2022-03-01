@@ -1,0 +1,94 @@
+header{
+    position: relative;
+}
+
+header , main{
+    width: 65%;
+    margin: auto;
+}
+
+#insat-logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav-bar{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(167, 14, 14);
+}
+
+.nav-bar a{
+    background-color: rgb(167, 14, 14); 
+    width: 20%;
+    text-align: center;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    font-family:monospace;
+}
+
+.nav-bar :hover{
+    background-color: black;
+    background-image:url(../imgs/rings.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.nav-bar :hover b {
+    width: 100%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#bienvenue{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#etape{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#tuiles{
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.body{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#cubes{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+}
+
+.cubes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+footer p{
+    text-align: center;
+}
